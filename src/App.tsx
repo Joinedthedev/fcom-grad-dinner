@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-import "./App.css";
+
 
 import { ArrowRightIcon, ChatIcon, CheckIcon } from "@chakra-ui/icons";
 import {
