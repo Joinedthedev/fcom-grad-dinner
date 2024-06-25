@@ -1,19 +1,19 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 import "./App.css";
 
+import { ArrowRightIcon, ChatIcon, CheckIcon } from "@chakra-ui/icons";
 import {
+  Box,
+  Button,
+  Flex,
   HStack,
   Heading,
-  Box,
-  Text,
-  Button,
   Icon,
-  Flex,
+  Text,
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { ArrowRightIcon, ChatIcon, CheckIcon } from "@chakra-ui/icons";
 import FAQAccordion from "./FAQAccordion";
 import Itenary from "./Itenary";
 

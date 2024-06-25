@@ -1,4 +1,3 @@
-import React from 'react'
 import { Box, HStack, Heading } from '@chakra-ui/react'
 const About = () => {
   return (
