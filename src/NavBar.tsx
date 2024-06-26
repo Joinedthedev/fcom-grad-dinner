@@ -1,3 +1,4 @@
+import SchoolIcon from '@mui/icons-material/School';
 import { useRef } from "react";
 
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
@@ -5,17 +6,18 @@ import {
   Box,
   Flex,
   HStack,
+  Icon,
   IconButton,
-  Image,
   Stack,
   useDisclosure
 } from "@chakra-ui/react";
-import gradCap from "./assets/grad-cap.jpg";
+
+
 
 type NavLinkProps = {
   name: string;
 
-  ref: React.RefObject<HTMLDivElement> | null;
+  ref?: React.RefObject<HTMLDivElement> | null;
 };
 
 
@@ -27,7 +29,7 @@ const NavLink = ({ name, ref }: NavLinkProps) => {
       px={2}
       py={1}
       rounded={"md"}
-      color={"gold.500"}
+      color={"green.500"}
       _hover={{
         textDecoration: "none",
       }}
@@ -50,16 +52,16 @@ export default function Simple() {
   ];
   return (
     <>
-      <Box bg={"black"} px={4}>
+      <Box bg={"#D1C8B5"} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
-            bg={"black"}
+            bg={"#D1C8B5"}
             size={"lg"}
             icon={
               isOpen ? (
-                <CloseIcon color={"gold.500"} />
+                <CloseIcon color={"green.500"} />
               ) : (
-                <HamburgerIcon color={"gold.500"} />
+                <HamburgerIcon color={"green.500"} />
               )
             }
             aria-label={"Open Menu"}
@@ -73,7 +75,7 @@ export default function Simple() {
             alignItems={"center"}
           >
             <a href="#">
-              <Image boxSize={"70px"} objectFit={"cover"} src={gradCap} />
+              <Icon as={SchoolIcon}/>
             </a>
             <HStack
               as={"nav"}

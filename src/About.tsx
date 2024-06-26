@@ -3,7 +3,7 @@ const About = () => {
   return (
     <Box >
   <HStack align={"center"} justify={"center"}>
-    <Heading fontSize={"xl"} p={4} textAlign={"center"} color={"gold.500"}>
+    <Heading fontSize={"xl"} p={4} textAlign={"center"} color={"green.500"}>
     A Golden Evening: Celebrating Our Journey's End and New Beginnings
 
     </Heading>

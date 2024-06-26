@@ -39,9 +39,9 @@ const FAQAccordion = () => {
   ];
 
   return (
-    <Accordion id="accord" bgColor={"black"} color={"gold.500"} allowToggle>
+    <Accordion id="accord" bgColor={"#D1C8B5"} color={"green.500"} allowToggle>
       {faqItems.map((item, index) => (
-        <AccordionItem key={index}>
+        <AccordionItem bg={"#D1C8B5"} key={index}>
           <h2>
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">

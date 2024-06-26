@@ -16,10 +16,10 @@ const Itenary = () => {
       <Heading>Itenary/Order of Events</Heading>
       <TableContainer>
         <Table variant="simple">
-          <TableCaption>Please come on time!</TableCaption>
-          <Thead>
-            <Th> Event</Th>
-            <Th> Time</Th>
+          <TableCaption color={"red"} fontSize={"md"}>Please come on time!</TableCaption>
+          <Thead  >
+            <Th color={"green.500"} fontSize={"md"}> Event</Th>
+            <Th color={"green.500"} fontSize={"md"}> Time</Th>
           </Thead>
 
           <Tbody>

@@ -1,6 +1,7 @@
 .bg, html {
-  --dot-bg: #000000;
-  --dot-color: #BFA142;
+  --dot-bg: #D1C8B5
+  ;
+  --dot-color: #213627;
   --dot-size: 1px;
   --dot-space: 22px;
 	background:

@@ -19,11 +19,11 @@ import Itenary from "./Itenary";
 
 function App() {
   const accord = useRef<null | HTMLDivElement>(null);
-  const isDesktop = useBreakpointValue({ base: false, xs: false, sm: false, md:true, lg: true })
+  const isDesktop = useBreakpointValue({ base: false, xs: false, sm: false, md:false, lg: true })
   return(
     <>
     {!isDesktop ?
-      <Box p={4} color={"gold.500"}>
+      <Box p={4} color={"green.500"}>
         <HStack align={"center"} justify={"center"}>
           <Heading fontSize={"3xl"} textAlign={"center"}>
             FCOM Graduation Dinner
@@ -44,8 +44,8 @@ function App() {
           <Flex py={4} justify={"space-between"}>
            
               <Button
-                bg={"gold.500"}
-                color={"black"}
+                bg={"green.500"}
+                color={"white"}
                 rightIcon={<Icon as={ArrowRightIcon} />}
                 onClick={() =>
                   accord.current?.scrollIntoView({ behavior: "smooth" })
@@ -57,8 +57,8 @@ function App() {
             
             <a href="https://wa.me/2349063968557">
               <Button
-                bg={"gold.500"}
-                color={"black"}
+                bg={"green.500"}
+                color={"white"}
                 rightIcon={<Icon as={CheckIcon} />}
               >
                 {" "}
@@ -81,8 +81,8 @@ function App() {
           <a href="https://chat.whatsapp.com/K9T59y95JwSDT9yWHIDK4f">
             <Button
               m={3}
-              bg={"gold.500"}
-              color={"black"}
+              bg={"green.500"}
+              color={"white"}
               rightIcon={<Icon as={ChatIcon} />}
             >
               {" "}
@@ -93,7 +93,7 @@ function App() {
         
       </Box>
     : <HStack justify={"center"} align={"center"}>
-      <Heading  color={"gold.500"} fontSize={"100px"}>Please Open on Mobile!</Heading>
+      <Heading  color={"green.500"} fontSize={"100px"}>Please Open on Mobile!</Heading>
     </HStack>}
     </>
   );
