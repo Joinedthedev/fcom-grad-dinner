@@ -55,16 +55,18 @@ function App() {
                 Learn More
               </Button>
             
-            <a href="https://wa.me/2349063968557">
+           
               <Button
                 bg={"green.500"}
                 color={"white"}
                 rightIcon={<Icon as={CheckIcon} />}
+               isDisabled
               >
+                
                 {" "}
                 Pay Now{" "}
               </Button>
-            </a>
+        
           </Flex>
         </Box>
 
